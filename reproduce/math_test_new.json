@@ -1,0 +1,242 @@
+[
+ {
+  "id": "power_mod_1",
+  "kind": "power_mod",
+  "question": "What is the remainder when 9 raised to the power 269 is divided by 13?",
+  "answer": 3
+ },
+ {
+  "id": "power_mod_2",
+  "kind": "power_mod",
+  "question": "What is the remainder when 4 raised to the power 344 is divided by 7?",
+  "answer": 2
+ },
+ {
+  "id": "power_mod_3",
+  "kind": "power_mod",
+  "question": "What is the remainder when 4 raised to the power 58 is divided by 23?",
+  "answer": 18
+ },
+ {
+  "id": "power_mod_4",
+  "kind": "power_mod",
+  "question": "What is the remainder when 11 raised to the power 238 is divided by 7?",
+  "answer": 4
+ },
+ {
+  "id": "power_mod_5",
+  "kind": "power_mod",
+  "question": "What is the remainder when 5 raised to the power 375 is divided by 17?",
+  "answer": 10
+ },
+ {
+  "id": "power_mod_6",
+  "kind": "power_mod",
+  "question": "What is the remainder when 18 raised to the power 394 is divided by 7?",
+  "answer": 4
+ },
+ {
+  "id": "power_mod_7",
+  "kind": "power_mod",
+  "question": "What is the remainder when 14 raised to the power 174 is divided by 13?",
+  "answer": 1
+ },
+ {
+  "id": "power_mod_8",
+  "kind": "power_mod",
+  "question": "What is the remainder when 8 raised to the power 179 is divided by 17?",
+  "answer": 2
+ },
+ {
+  "id": "digit_sum_1",
+  "kind": "digit_sum",
+  "question": "How many integers from 1 to 4891 inclusive have digits that add up to exactly 8?",
+  "answer": 145
+ },
+ {
+  "id": "digit_sum_2",
+  "kind": "digit_sum",
+  "question": "How many integers from 1 to 1944 inclusive have digits that add up to exactly 18?",
+  "answer": 114
+ },
+ {
+  "id": "digit_sum_3",
+  "kind": "digit_sum",
+  "question": "How many integers from 1 to 1378 inclusive have digits that add up to exactly 8?",
+  "answer": 71
+ },
+ {
+  "id": "digit_sum_4",
+  "kind": "digit_sum",
+  "question": "How many integers from 1 to 4963 inclusive have digits that add up to exactly 7?",
+  "answer": 110
+ },
+ {
+  "id": "digit_sum_5",
+  "kind": "digit_sum",
+  "question": "How many integers from 1 to 1035 inclusive have digits that add up to exactly 17?",
+  "answer": 63
+ },
+ {
+  "id": "digit_sum_6",
+  "kind": "digit_sum",
+  "question": "How many integers from 1 to 1645 inclusive have digits that add up to exactly 6?",
+  "answer": 49
+ },
+ {
+  "id": "digit_sum_7",
+  "kind": "digit_sum",
+  "question": "How many integers from 1 to 1026 inclusive have digits that add up to exactly 13?",
+  "answer": 75
+ },
+ {
+  "id": "digit_sum_8",
+  "kind": "digit_sum",
+  "question": "How many integers from 1 to 4857 inclusive have digits that add up to exactly 9?",
+  "answer": 185
+ },
+ {
+  "id": "depreciation_1",
+  "kind": "depreciation",
+  "question": "A machine bought for $6000 loses 50% of its value at the end of every year. What is it worth in dollars after 2 years?",
+  "answer": 1500
+ },
+ {
+  "id": "depreciation_2",
+  "kind": "depreciation",
+  "question": "A machine bought for $18000 loses 40% of its value at the end of every year. What is it worth in dollars after 2 years?",
+  "answer": 6480
+ },
+ {
+  "id": "depreciation_3",
+  "kind": "depreciation",
+  "question": "A machine bought for $12000 loses 20% of its value at the end of every year. What is it worth in dollars after 2 years?",
+  "answer": 7680
+ },
+ {
+  "id": "depreciation_4",
+  "kind": "depreciation",
+  "question": "A machine bought for $26000 loses 50% of its value at the end of every year. What is it worth in dollars after 3 years?",
+  "answer": 3250
+ },
+ {
+  "id": "depreciation_5",
+  "kind": "depreciation",
+  "question": "A machine bought for $3000 loses 10% of its value at the end of every year. What is it worth in dollars after 3 years?",
+  "answer": 2187
+ },
+ {
+  "id": "depreciation_6",
+  "kind": "depreciation",
+  "question": "A machine bought for $35000 loses 40% of its value at the end of every year. What is it worth in dollars after 2 years?",
+  "answer": 12600
+ },
+ {
+  "id": "depreciation_7",
+  "kind": "depreciation",
+  "question": "A machine bought for $6000 loses 40% of its value at the end of every year. What is it worth in dollars after 2 years?",
+  "answer": 2160
+ },
+ {
+  "id": "depreciation_8",
+  "kind": "depreciation",
+  "question": "A machine bought for $36000 loses 10% of its value at the end of every year. What is it worth in dollars after 2 years?",
+  "answer": 29160
+ },
+ {
+  "id": "date_span_1",
+  "kind": "date_span",
+  "question": "How many days are there from January 18, 2027 to December 20, 2027, counting both the first and the last day?",
+  "answer": 337
+ },
+ {
+  "id": "date_span_2",
+  "kind": "date_span",
+  "question": "How many days are there from May 14, 2028 to October 12, 2028, counting both the first and the last day?",
+  "answer": 152
+ },
+ {
+  "id": "date_span_3",
+  "kind": "date_span",
+  "question": "How many days are there from April 4, 2028 to November 24, 2028, counting both the first and the last day?",
+  "answer": 235
+ },
+ {
+  "id": "date_span_4",
+  "kind": "date_span",
+  "question": "How many days are there from May 10, 2031 to September 2, 2031, counting both the first and the last day?",
+  "answer": 116
+ },
+ {
+  "id": "date_span_5",
+  "kind": "date_span",
+  "question": "How many days are there from February 27, 2028 to August 11, 2028, counting both the first and the last day?",
+  "answer": 167
+ },
+ {
+  "id": "date_span_6",
+  "kind": "date_span",
+  "question": "How many days are there from January 17, 2031 to November 17, 2031, counting both the first and the last day?",
+  "answer": 305
+ },
+ {
+  "id": "date_span_7",
+  "kind": "date_span",
+  "question": "How many days are there from May 7, 2027 to October 3, 2027, counting both the first and the last day?",
+  "answer": 150
+ },
+ {
+  "id": "date_span_8",
+  "kind": "date_span",
+  "question": "How many days are there from May 15, 2027 to July 15, 2027, counting both the first and the last day?",
+  "answer": 62
+ },
+ {
+  "id": "coin_ways_1",
+  "kind": "coin_ways",
+  "question": "In how many different ways can you make 115 cents using coins worth 1, 5, 10, 20 and 50 cents? (Order does not matter.)",
+  "answer": 512
+ },
+ {
+  "id": "coin_ways_2",
+  "kind": "coin_ways",
+  "question": "In how many different ways can you make 50 cents using coins worth 1, 5, 10 and 25 cents? (Order does not matter.)",
+  "answer": 49
+ },
+ {
+  "id": "coin_ways_3",
+  "kind": "coin_ways",
+  "question": "In how many different ways can you make 177 cents using coins worth 1, 2, 5 and 10 cents? (Order does not matter.)",
+  "answer": 10716
+ },
+ {
+  "id": "coin_ways_4",
+  "kind": "coin_ways",
+  "question": "In how many different ways can you make 170 cents using coins worth 1, 5, 10 and 25 cents? (Order does not matter.)",
+  "answer": 946
+ },
+ {
+  "id": "coin_ways_5",
+  "kind": "coin_ways",
+  "question": "In how many different ways can you make 65 cents using coins worth 1, 5, 10, 20 and 50 cents? (Order does not matter.)",
+  "answer": 106
+ },
+ {
+  "id": "coin_ways_6",
+  "kind": "coin_ways",
+  "question": "In how many different ways can you make 109 cents using coins worth 1, 2, 5 and 10 cents? (Order does not matter.)",
+  "answer": 2728
+ },
+ {
+  "id": "coin_ways_7",
+  "kind": "coin_ways",
+  "question": "In how many different ways can you make 88 cents using coins worth 1, 2, 5 and 10 cents? (Order does not matter.)",
+  "answer": 1515
+ },
+ {
+  "id": "coin_ways_8",
+  "kind": "coin_ways",
+  "question": "In how many different ways can you make 61 cents using coins worth 1, 5, 10, 20 and 50 cents? (Order does not matter.)",
+  "answer": 88
+ }
+]

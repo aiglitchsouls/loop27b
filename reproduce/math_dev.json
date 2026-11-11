@@ -1,0 +1,482 @@
+[
+ {
+  "id": "incl_excl_1",
+  "kind": "incl_excl",
+  "question": "How many integers from 1 to 350 inclusive are divisible by at least one of 7 and 3, and are not divisible by 13?",
+  "answer": 140
+ },
+ {
+  "id": "incl_excl_2",
+  "kind": "incl_excl",
+  "question": "How many integers from 1 to 876 inclusive are divisible by at least one of 11 and 3, and are not divisible by 8?",
+  "answer": 303
+ },
+ {
+  "id": "incl_excl_3",
+  "kind": "incl_excl",
+  "question": "How many integers from 1 to 760 inclusive are divisible by at least one of 9 and 4, and are not divisible by 8?",
+  "answer": 158
+ },
+ {
+  "id": "incl_excl_4",
+  "kind": "incl_excl",
+  "question": "How many integers from 1 to 903 inclusive are divisible by at least one of 11 and 3, and are not divisible by 5?",
+  "answer": 285
+ },
+ {
+  "id": "incl_excl_5",
+  "kind": "incl_excl",
+  "question": "How many integers from 1 to 859 inclusive are divisible by at least one of 4 and 9, and are not divisible by 13?",
+  "answer": 264
+ },
+ {
+  "id": "incl_excl_6",
+  "kind": "incl_excl",
+  "question": "How many integers from 1 to 2454 inclusive are divisible by at least one of 7 and 4, and are not divisible by 5?",
+  "answer": 701
+ },
+ {
+  "id": "incl_excl_7",
+  "kind": "incl_excl",
+  "question": "How many integers from 1 to 783 inclusive are divisible by at least one of 3 and 7, and are not divisible by 10?",
+  "answer": 301
+ },
+ {
+  "id": "incl_excl_8",
+  "kind": "incl_excl",
+  "question": "How many integers from 1 to 1113 inclusive are divisible by at least one of 4 and 6, and are not divisible by 13?",
+  "answer": 343
+ },
+ {
+  "id": "sum_multiples_1",
+  "kind": "sum_multiples",
+  "question": "What is the sum of all integers from 1 to 523 inclusive that are divisible by 7 or by 4?",
+  "answer": 48697
+ },
+ {
+  "id": "sum_multiples_2",
+  "kind": "sum_multiples",
+  "question": "What is the sum of all integers from 1 to 365 inclusive that are divisible by 8 or by 4?",
+  "answer": 16744
+ },
+ {
+  "id": "sum_multiples_3",
+  "kind": "sum_multiples",
+  "question": "What is the sum of all integers from 1 to 576 inclusive that are divisible by 7 or by 8?",
+  "answer": 41765
+ },
+ {
+  "id": "sum_multiples_4",
+  "kind": "sum_multiples",
+  "question": "What is the sum of all integers from 1 to 211 inclusive that are divisible by 3 or by 4?",
+  "answer": 11131
+ },
+ {
+  "id": "sum_multiples_5",
+  "kind": "sum_multiples",
+  "question": "What is the sum of all integers from 1 to 514 inclusive that are divisible by 4 or by 8?",
+  "answer": 33024
+ },
+ {
+  "id": "sum_multiples_6",
+  "kind": "sum_multiples",
+  "question": "What is the sum of all integers from 1 to 301 inclusive that are divisible by 6 or by 3?",
+  "answer": 15150
+ },
+ {
+  "id": "sum_multiples_7",
+  "kind": "sum_multiples",
+  "question": "What is the sum of all integers from 1 to 238 inclusive that are divisible by 8 or by 7?",
+  "answer": 7085
+ },
+ {
+  "id": "sum_multiples_8",
+  "kind": "sum_multiples",
+  "question": "What is the sum of all integers from 1 to 599 inclusive that are divisible by 8 or by 4?",
+  "answer": 44700
+ },
+ {
+  "id": "percent_chain_1",
+  "kind": "percent_chain",
+  "question": "A coat costs $320. It is discounted by 25%, then 5% sales tax is added to the discounted price, and finally a $5 gift card is applied. What is the final price in dollars?",
+  "answer": 247
+ },
+ {
+  "id": "percent_chain_2",
+  "kind": "percent_chain",
+  "question": "A coat costs $100. It is discounted by 25%, then 20% sales tax is added to the discounted price, and finally a $10 gift card is applied. What is the final price in dollars?",
+  "answer": 80
+ },
+ {
+  "id": "percent_chain_3",
+  "kind": "percent_chain",
+  "question": "A coat costs $200. It is discounted by 20%, then 5% sales tax is added to the discounted price, and finally a $10 gift card is applied. What is the final price in dollars?",
+  "answer": 158
+ },
+ {
+  "id": "percent_chain_4",
+  "kind": "percent_chain",
+  "question": "A coat costs $800. It is discounted by 15%, then 20% sales tax is added to the discounted price, and finally a $5 gift card is applied. What is the final price in dollars?",
+  "answer": 811
+ },
+ {
+  "id": "percent_chain_5",
+  "kind": "percent_chain",
+  "question": "A coat costs $100. It is discounted by 40%, then 20% sales tax is added to the discounted price. What is the final price in dollars?",
+  "answer": 72
+ },
+ {
+  "id": "percent_chain_6",
+  "kind": "percent_chain",
+  "question": "A coat costs $100. It is discounted by 20%, then 10% sales tax is added to the discounted price. What is the final price in dollars?",
+  "answer": 88
+ },
+ {
+  "id": "percent_chain_7",
+  "kind": "percent_chain",
+  "question": "A coat costs $100. It is discounted by 15%, then 20% sales tax is added to the discounted price, and finally a $5 gift card is applied. What is the final price in dollars?",
+  "answer": 97
+ },
+ {
+  "id": "percent_chain_8",
+  "kind": "percent_chain",
+  "question": "A coat costs $800. It is discounted by 25%, then 12% sales tax is added to the discounted price, and finally a $5 gift card is applied. What is the final price in dollars?",
+  "answer": 667
+ },
+ {
+  "id": "work_rate_1",
+  "kind": "work_rate",
+  "question": "Pipe A can fill a tank in 2 hours and pipe B can fill it in 7 hours. A drain can empty the full tank in 7 hours. Starting with an empty tank and all three open, how many minutes does it take to fill the tank?",
+  "answer": 120
+ },
+ {
+  "id": "work_rate_2",
+  "kind": "work_rate",
+  "question": "Pipe A can fill a tank in 4 hours and pipe B can fill it in 4 hours. A drain can empty the full tank in 8 hours. Starting with an empty tank and all three open, how many minutes does it take to fill the tank?",
+  "answer": 160
+ },
+ {
+  "id": "work_rate_3",
+  "kind": "work_rate",
+  "question": "Pipe A can fill a tank in 8 hours and pipe B can fill it in 9 hours. A drain can empty the full tank in 9 hours. Starting with an empty tank and all three open, how many minutes does it take to fill the tank?",
+  "answer": 480
+ },
+ {
+  "id": "work_rate_4",
+  "kind": "work_rate",
+  "question": "Pipe A can fill a tank in 9 hours and pipe B can fill it in 6 hours. A drain can empty the full tank in 9 hours. Starting with an empty tank and all three open, how many minutes does it take to fill the tank?",
+  "answer": 360
+ },
+ {
+  "id": "work_rate_5",
+  "kind": "work_rate",
+  "question": "Pipe A can fill a tank in 3 hours and pipe B can fill it in 3 hours. A drain can empty the full tank in 4 hours. Starting with an empty tank and all three open, how many minutes does it take to fill the tank?",
+  "answer": 144
+ },
+ {
+  "id": "work_rate_6",
+  "kind": "work_rate",
+  "question": "Pipe A can fill a tank in 6 hours and pipe B can fill it in 10 hours. A drain can empty the full tank in 5 hours. Starting with an empty tank and all three open, how many minutes does it take to fill the tank?",
+  "answer": 900
+ },
+ {
+  "id": "work_rate_7",
+  "kind": "work_rate",
+  "question": "Pipe A can fill a tank in 4 hours and pipe B can fill it in 12 hours. A drain can empty the full tank in 5 hours. Starting with an empty tank and all three open, how many minutes does it take to fill the tank?",
+  "answer": 450
+ },
+ {
+  "id": "work_rate_8",
+  "kind": "work_rate",
+  "question": "Pipe A can fill a tank in 7 hours and pipe B can fill it in 3 hours. A drain can empty the full tank in 21 hours. Starting with an empty tank and all three open, how many minutes does it take to fill the tank?",
+  "answer": 140
+ },
+ {
+  "id": "meeting_1",
+  "kind": "meeting",
+  "question": "Two towns are 460 km apart. A train leaves the first town toward the second at 60 km/h. 60 minutes later, a second train leaves the second town toward the first at 100 km/h. How many minutes after the first train leaves do the two trains meet?",
+  "answer": 210
+ },
+ {
+  "id": "meeting_2",
+  "kind": "meeting",
+  "question": "Two towns are 860 km apart. A train leaves the first town toward the second at 40 km/h. 60 minutes later, a second train leaves the second town toward the first at 60 km/h. How many minutes after the first train leaves do the two trains meet?",
+  "answer": 552
+ },
+ {
+  "id": "meeting_3",
+  "kind": "meeting",
+  "question": "Two towns are 680 km apart. A train leaves the first town toward the second at 75 km/h. At the same time, a second train leaves the second town toward the first at 95 km/h. How many minutes after the first train leaves do the two trains meet?",
+  "answer": 240
+ },
+ {
+  "id": "meeting_4",
+  "kind": "meeting",
+  "question": "Two towns are 120 km apart. A train leaves the first town toward the second at 105 km/h. 30 minutes later, a second train leaves the second town toward the first at 45 km/h. How many minutes after the first train leaves do the two trains meet?",
+  "answer": 57
+ },
+ {
+  "id": "meeting_5",
+  "kind": "meeting",
+  "question": "Two towns are 850 km apart. A train leaves the first town toward the second at 90 km/h. 30 minutes later, a second train leaves the second town toward the first at 120 km/h. How many minutes after the first train leaves do the two trains meet?",
+  "answer": 260
+ },
+ {
+  "id": "meeting_6",
+  "kind": "meeting",
+  "question": "Two towns are 800 km apart. A train leaves the first town toward the second at 110 km/h. 60 minutes later, a second train leaves the second town toward the first at 115 km/h. How many minutes after the first train leaves do the two trains meet?",
+  "answer": 244
+ },
+ {
+  "id": "meeting_7",
+  "kind": "meeting",
+  "question": "Two towns are 400 km apart. A train leaves the first town toward the second at 40 km/h. 60 minutes later, a second train leaves the second town toward the first at 40 km/h. How many minutes after the first train leaves do the two trains meet?",
+  "answer": 330
+ },
+ {
+  "id": "meeting_8",
+  "kind": "meeting",
+  "question": "Two towns are 570 km apart. A train leaves the first town toward the second at 65 km/h. 30 minutes later, a second train leaves the second town toward the first at 85 km/h. How many minutes after the first train leaves do the two trains meet?",
+  "answer": 245
+ },
+ {
+  "id": "committee_1",
+  "kind": "committee",
+  "question": "A club has 5 men and 4 women. In how many ways can a committee of 3 people be chosen so that it includes at least one man and at least one woman?",
+  "answer": 70
+ },
+ {
+  "id": "committee_2",
+  "kind": "committee",
+  "question": "A club has 6 men and 8 women. In how many ways can a committee of 3 people be chosen so that it includes at least one man and at least one woman?",
+  "answer": 288
+ },
+ {
+  "id": "committee_3",
+  "kind": "committee",
+  "question": "A club has 4 men and 9 women. In how many ways can a committee of 3 people be chosen so that it includes at least one man and at least one woman?",
+  "answer": 198
+ },
+ {
+  "id": "committee_4",
+  "kind": "committee",
+  "question": "A club has 7 men and 4 women. In how many ways can a committee of 4 people be chosen so that it includes at least one man and at least one woman?",
+  "answer": 294
+ },
+ {
+  "id": "committee_5",
+  "kind": "committee",
+  "question": "A club has 8 men and 7 women. In how many ways can a committee of 3 people be chosen so that it includes at least one man and at least one woman?",
+  "answer": 364
+ },
+ {
+  "id": "committee_6",
+  "kind": "committee",
+  "question": "A club has 6 men and 4 women. In how many ways can a committee of 5 people be chosen so that it includes at least one man and at least one woman?",
+  "answer": 246
+ },
+ {
+  "id": "committee_7",
+  "kind": "committee",
+  "question": "A club has 4 men and 8 women. In how many ways can a committee of 4 people be chosen so that it includes at least one man and at least one woman?",
+  "answer": 424
+ },
+ {
+  "id": "committee_8",
+  "kind": "committee",
+  "question": "A club has 8 men and 4 women. In how many ways can a committee of 3 people be chosen so that it includes at least one man and at least one woman?",
+  "answer": 160
+ },
+ {
+  "id": "arith_series_1",
+  "kind": "arith_series",
+  "question": "A theatre has 13 rows. The first row has 28 seats and each row after the first has 2 more seats than the row in front of it. How many seats are there in total?",
+  "answer": 520
+ },
+ {
+  "id": "arith_series_2",
+  "kind": "arith_series",
+  "question": "A theatre has 16 rows. The first row has 18 seats and each row after the first has 1 more seats than the row in front of it. How many seats are there in total?",
+  "answer": 408
+ },
+ {
+  "id": "arith_series_3",
+  "kind": "arith_series",
+  "question": "A theatre has 26 rows. The first row has 27 seats and each row after the first has 1 more seats than the row in front of it. How many seats are there in total?",
+  "answer": 1027
+ },
+ {
+  "id": "arith_series_4",
+  "kind": "arith_series",
+  "question": "A theatre has 14 rows. The first row has 12 seats and each row after the first has 1 more seats than the row in front of it. How many seats are there in total?",
+  "answer": 259
+ },
+ {
+  "id": "arith_series_5",
+  "kind": "arith_series",
+  "question": "A theatre has 38 rows. The first row has 14 seats and each row after the first has 3 more seats than the row in front of it. How many seats are there in total?",
+  "answer": 2641
+ },
+ {
+  "id": "arith_series_6",
+  "kind": "arith_series",
+  "question": "A theatre has 24 rows. The first row has 19 seats and each row after the first has 3 more seats than the row in front of it. How many seats are there in total?",
+  "answer": 1284
+ },
+ {
+  "id": "arith_series_7",
+  "kind": "arith_series",
+  "question": "A theatre has 15 rows. The first row has 21 seats and each row after the first has 1 more seats than the row in front of it. How many seats are there in total?",
+  "answer": 420
+ },
+ {
+  "id": "arith_series_8",
+  "kind": "arith_series",
+  "question": "A theatre has 39 rows. The first row has 15 seats and each row after the first has 4 more seats than the row in front of it. How many seats are there in total?",
+  "answer": 3549
+ },
+ {
+  "id": "growth_1",
+  "kind": "growth",
+  "question": "A bacteria culture starts with 280 cells and triples every 3 hours. How many cells are there after 18 hours?",
+  "answer": 204120
+ },
+ {
+  "id": "growth_2",
+  "kind": "growth",
+  "question": "A bacteria culture starts with 270 cells and doubles every 6 hours. How many cells are there after 42 hours?",
+  "answer": 34560
+ },
+ {
+  "id": "growth_3",
+  "kind": "growth",
+  "question": "A bacteria culture starts with 220 cells and doubles every 2 hours. How many cells are there after 14 hours?",
+  "answer": 28160
+ },
+ {
+  "id": "growth_4",
+  "kind": "growth",
+  "question": "A bacteria culture starts with 280 cells and triples every 6 hours. How many cells are there after 42 hours?",
+  "answer": 612360
+ },
+ {
+  "id": "growth_5",
+  "kind": "growth",
+  "question": "A bacteria culture starts with 90 cells and doubles every 3 hours. How many cells are there after 9 hours?",
+  "answer": 720
+ },
+ {
+  "id": "growth_6",
+  "kind": "growth",
+  "question": "A bacteria culture starts with 160 cells and doubles every 6 hours. How many cells are there after 42 hours?",
+  "answer": 20480
+ },
+ {
+  "id": "growth_7",
+  "kind": "growth",
+  "question": "A bacteria culture starts with 210 cells and doubles every 6 hours. How many cells are there after 36 hours?",
+  "answer": 13440
+ },
+ {
+  "id": "growth_8",
+  "kind": "growth",
+  "question": "A bacteria culture starts with 220 cells and triples every 2 hours. How many cells are there after 10 hours?",
+  "answer": 53460
+ },
+ {
+  "id": "time_midnight_1",
+  "kind": "time_midnight",
+  "question": "A night shift starts at 21:21 and ends at 08:50 the next morning. How many minutes long is the shift?",
+  "answer": 689
+ },
+ {
+  "id": "time_midnight_2",
+  "kind": "time_midnight",
+  "question": "A night shift starts at 20:42 and ends at 08:38 the next morning. How many minutes long is the shift?",
+  "answer": 716
+ },
+ {
+  "id": "time_midnight_3",
+  "kind": "time_midnight",
+  "question": "A night shift starts at 21:32 and ends at 06:06 the next morning. How many minutes long is the shift?",
+  "answer": 514
+ },
+ {
+  "id": "time_midnight_4",
+  "kind": "time_midnight",
+  "question": "A night shift starts at 21:35 and ends at 04:09 the next morning. How many minutes long is the shift?",
+  "answer": 394
+ },
+ {
+  "id": "time_midnight_5",
+  "kind": "time_midnight",
+  "question": "A night shift starts at 20:00 and ends at 05:52 the next morning. How many minutes long is the shift?",
+  "answer": 592
+ },
+ {
+  "id": "time_midnight_6",
+  "kind": "time_midnight",
+  "question": "A night shift starts at 19:07 and ends at 07:08 the next morning. How many minutes long is the shift?",
+  "answer": 721
+ },
+ {
+  "id": "time_midnight_7",
+  "kind": "time_midnight",
+  "question": "A night shift starts at 23:49 and ends at 05:43 the next morning. How many minutes long is the shift?",
+  "answer": 354
+ },
+ {
+  "id": "time_midnight_8",
+  "kind": "time_midnight",
+  "question": "A night shift starts at 20:53 and ends at 08:51 the next morning. How many minutes long is the shift?",
+  "answer": 718
+ },
+ {
+  "id": "ages_1",
+  "kind": "ages",
+  "question": "Anna is 4 times as old as her nephew Ben. In 4 years, Anna will be 3 times as old as Ben. How old is Anna now?",
+  "answer": 32
+ },
+ {
+  "id": "ages_2",
+  "kind": "ages",
+  "question": "Anna is 5 times as old as her nephew Ben. In 16 years, Anna will be 3 times as old as Ben. How old is Anna now?",
+  "answer": 80
+ },
+ {
+  "id": "ages_3",
+  "kind": "ages",
+  "question": "Anna is 4 times as old as her nephew Ben. In 24 years, Anna will be 2 times as old as Ben. How old is Anna now?",
+  "answer": 48
+ },
+ {
+  "id": "ages_4",
+  "kind": "ages",
+  "question": "Anna is 6 times as old as her nephew Ben. In 24 years, Anna will be 3 times as old as Ben. How old is Anna now?",
+  "answer": 96
+ },
+ {
+  "id": "ages_5",
+  "kind": "ages",
+  "question": "Anna is 5 times as old as her nephew Ben. In 20 years, Anna will be 3 times as old as Ben. How old is Anna now?",
+  "answer": 100
+ },
+ {
+  "id": "ages_6",
+  "kind": "ages",
+  "question": "Anna is 5 times as old as her nephew Ben. In 12 years, Anna will be 3 times as old as Ben. How old is Anna now?",
+  "answer": 60
+ },
+ {
+  "id": "ages_7",
+  "kind": "ages",
+  "question": "Anna is 5 times as old as her nephew Ben. In 22 years, Anna will be 3 times as old as Ben. How old is Anna now?",
+  "answer": 110
+ },
+ {
+  "id": "ages_8",
+  "kind": "ages",
+  "question": "Anna is 3 times as old as her nephew Ben. In 18 years, Anna will be 2 times as old as Ben. How old is Anna now?",
+  "answer": 54
+ }
+]
