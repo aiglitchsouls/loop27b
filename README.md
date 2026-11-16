@@ -64,9 +64,29 @@ Opus run as a Claude Code subagent, not Opus 4.5 and not a clean API call. Break
 
 ### Contest maths (AIME 2026, HMMT Feb 2026) and IFEval
 
-Running now on the plain 27B with thinking on (not the loop), to compare against published model-card numbers:
-`D:\timepass\contest_bench`. AIME 2026: 10 of 10 right so far (2026-11-11). One try per problem, 30 problems, so
-one problem is 3.3 points.
+The **plain 27B** (no loop, no tools), thinking on, one try per problem, run 2026-11-11 to 11-15 on the same card
+(`-fit on -fa on -c 32768`, q8_0 KV cache, MTP draft head, about 3.5 tok/s). Maths: temp 0.6, top_p 0.95, top_k 20,
+seed 42, 28,000-token thinking budget, answer = last `\boxed{}` checked with math-verify. IFEval: thinking off,
+greedy, scored with Google's own checker.
+
+| Test | Score | Notes |
+|---|---|---|
+| AIME 2026 (30) | **29/30 = 96.7%** | only #20 wrong (answered 277285, not even a valid AIME answer) |
+| HMMT Feb 2026 (33) | **28/33 = 84.8%** | 29/33 = 87.9% counting #7, whose answer equals the key's value to 15 digits in another form |
+| IFEval (541) | **80.2% prompt-strict** | prompt-loose 84.3%, instruction-strict 86.3%, instruction-loose 89.6% |
+
+**Bigger thinking budget (diagnostic).** All four real HMMT misses had run out of the 28k budget. Rerun once with
+48,000 tokens: #8 and #18 became right, #17 answered 1572 (key 1574), #20 gave the same wrong answer. Counting those
+two wins, HMMT is **30/33 = 90.9%** (31/33 with #7), but that is a mixed setup: only the misses got the bigger
+budget, so treat it as an upper estimate, not a clean score.
+
+How to compare: benchlm.ai's AIME 2026 list (34 models, all lab-reported, usually several tries averaged and
+64k-128k thinking) has Qwen3.6-27B at 94.1%, Kimi K2.6 at 96.4%, GLM-5.2 at 99.2%. Our 96.7% is from one try with
+28k thinking on a Q4 model, so it is roughly level with that group, not proof of beating any of them; one problem
+is 3.3 points. This measures the stock model, not the loop.
+
+Rows and summaries: `results/contest/` (`FULL_PICTURE.md` is the write-up). Scripts: `reproduce/run_contest.py`,
+`reproduce/chain.py`, `reproduce/budget_rerun.py`.
 
 ## What it is not
 
@@ -79,4 +99,4 @@ one problem is 3.3 points.
 - `loop27b.py`: the tool, self-contained (needs only this venv and `D:\timepass\llama_cpp_bin`, `models\qwen3.8-27b`).
 - `reproduce/`: frozen copies of the scripts that produced the results, as they were run. They use their original
   paths (`improve_27b`, `bench_14b`, `hard_bench`, `contest_bench`), so run them from there.
-- `results/`: copies of the result rows and summaries (`locked_test_*`, `hard_bench_*`).
+- `results/`: copies of the result rows and summaries (`locked_test_*`, `hard_bench_*`, `contest/`).
