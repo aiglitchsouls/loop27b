@@ -11,6 +11,34 @@ RTX 4060 8 GB, i5-12400F, 32 GB RAM, Windows 11, llama.cpp. 26 of the model's 65
 system RAM (`-ngl 26 -fa on -c 8192`), and the model's own draft head (`--spec-type draft-mtp`) adds about 65% speed.
 Temperature 0, seed 42.
 
+## Run the server yourself
+
+Tested with llama.cpp build 12094 (commit `6b9c0cf`) on Windows; the same flags work on Linux.
+
+**Loops (maths, code), 26 of 65 layers on the GPU.** This is what `loop27b.py` starts:
+
+```
+llama-server -m Qwen3.8-27B-UD-Q4_K_M.gguf --host 127.0.0.1 --port 8096 \
+  -ngl 26 -fa on -c 8192 --spec-type draft-mtp
+```
+
+Requests: `temperature 0`, `seed 42`, thinking off via `"chat_template_kwargs": {"enable_thinking": false}`.
+
+**Contest runs (AIME 2026, HMMT Feb 2026), 32k context, layers placed automatically:**
+
+```
+llama-server -m Qwen3.8-27B-UD-Q4_K_M.gguf --host 127.0.0.1 --port 8097 -np 1 \
+  -fit on -fa on -c 32768 -ctk q8_0 -ctv q8_0 --spec-type draft-mtp \
+  --reasoning-budget 28000 \
+  --reasoning-budget-message $'\n\nI am out of thinking time. I will now give my best final answer.\n'
+```
+
+Requests: `temperature 0.6`, `top_p 0.95`, `top_k 20`, `seed 42`, thinking on, `max_tokens 31000`. IFEval used the
+same server with thinking off, greedy, `max_tokens 3072`.
+
+`--spec-type draft-mtp` uses the model's built-in multi-token-prediction head as the draft model: about 3.5 → 5.7
+tokens/s here.
+
 ## Use
 
 ```
