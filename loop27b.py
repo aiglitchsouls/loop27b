@@ -6,6 +6,9 @@
 
 Options: --port N attaches to a llama-server already running on N instead of starting one.
          --model PATH (default: the 27B Q4 GGUF in D:\\timepass\\models).
+         --exact uses the server flags of the published results (MTP drafting only), for byte-identical re-runs.
+         The default adds n-gram lookup drafting: ~2.9x faster rewrites, same answers except rare one-word
+         differences at near-ties.
 
 Math loop ("m1" in the experiments): the model writes a Python script; the sandbox runs it; the printed number is
 the answer. If the script crashes or prints no number, the error goes back with "fix it" (up to 2 times).
@@ -36,7 +39,12 @@ TMP = os.path.join(HERE, "tmp")
 PY = sys.executable
 LLAMA = os.path.join(ROOT, "llama_cpp_bin", "llama-server.exe")
 MODEL = os.path.join(ROOT, "models", "qwen3.8-27b", "Qwen3.8-27B-UD-Q4_K_M.gguf")
-SERVER_ARGS = ["-ngl", "26", "-fa", "on", "-c", "8192", "--spec-type", "draft-mtp"]   # as tested on the RTX 4060
+SERVER_ARGS = ["-ngl", "26", "-fa", "on", "-c", "8192"]   # as tested on the RTX 4060
+# Draft types for speculative decoding. The model's MTP head plus n-gram lookup (copies from earlier text) made
+# fix-and-rewrite passes ~2.9x faster on 2026-11-23 (results/ngram_drafting.md), but greedy output
+# can differ at near-ties (2/20 rewrites changed one word). EXACT_SPEC is what produced the published results.
+SPEC = "draft-mtp,ngram-simple"
+EXACT_SPEC = "draft-mtp"
 DEFAULT_PORT = 8096
 
 MATH_BUDGET, CODE_BUDGET, RETRIES = 1024, 2048, 2
@@ -88,8 +96,9 @@ def gpu_busy():
 class Server:
     """Starts llama-server for the 27B, or attaches to one already listening on `port`."""
 
-    def __init__(self, port=None, model=MODEL):
+    def __init__(self, port=None, model=MODEL, spec=SPEC):
         self.attach, self.port, self.model, self.proc = port is not None, port or DEFAULT_PORT, model, None
+        self.spec = spec
 
     def __enter__(self):
         if self.attach:
@@ -101,7 +110,7 @@ class Server:
         os.makedirs(TMP, exist_ok=True)
         log = open(os.path.join(TMP, "server.log"), "a")
         self.proc = subprocess.Popen([LLAMA, "-m", self.model, "--port", str(self.port), "--host", "127.0.0.1"]
-                                     + SERVER_ARGS, stdout=log, stderr=subprocess.STDOUT, cwd=TMP)
+                                     + SERVER_ARGS + ["--spec-type", self.spec], stdout=log, stderr=subprocess.STDOUT, cwd=TMP)
         self._wait(600)
         return self
 
@@ -386,13 +395,15 @@ def main():
     ap.add_argument("--entry", help="code: the function name (default: the last def in the file)")
     ap.add_argument("--port", type=int, help="attach to a llama-server already running on this port")
     ap.add_argument("--model", default=MODEL)
+    ap.add_argument("--exact", action="store_true",
+                    help="draft with the MTP head only, as in the published results (byte-identical re-runs)")
     a = ap.parse_args()
     if a.mode == "selftest":
         raise SystemExit(0 if selftest() else 1)
     if not a.input:
         ap.error("input is required")
     log = lambda m: print("..", m, file=sys.stderr, flush=True)  # noqa: E731
-    with Server(a.port, a.model) as srv:
+    with Server(a.port, a.model, EXACT_SPEC if a.exact else SPEC) as srv:
         t0 = time.time()
         if a.mode == "math":
             r = solve_math(srv, a.input, log)

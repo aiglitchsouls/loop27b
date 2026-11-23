@@ -15,12 +15,19 @@ Temperature 0, seed 42.
 
 Tested with llama.cpp build 12094 (commit `6b9c0cf`) on Windows; the same flags work on Linux.
 
-**Loops (maths, code), 26 of 65 layers on the GPU.** This is what `loop27b.py` starts:
+**Loops (maths, code), 26 of 65 layers on the GPU.** This is what produced the results below, and what
+`loop27b.py --exact` starts:
 
 ```
 llama-server -m Qwen3.8-27B-UD-Q4_K_M.gguf --host 127.0.0.1 --port 8096 \
   -ngl 26 -fa on -c 8192 --spec-type draft-mtp
 ```
+
+Since 2026-11-23, `loop27b.py` without `--exact` starts the same server with `--spec-type draft-mtp,ngram-simple`.
+The added n-gram lookup drafts by copying from text already in the conversation, which is most of a rewrite: on 20
+IFEval rewrite requests it was 2.9× faster (4.9 → 16.4 tokens/s), and no faster on writing new text. At temperature 0
+the output can differ at near-ties (2 of 20 rewrites changed one word; both scored the same), so use `--exact` to
+re-run the published numbers. Details: `results/ngram_drafting.md`.
 
 Requests: `temperature 0`, `seed 42`, thinking off via `"chat_template_kwargs": {"enable_thinking": false}`.
 
