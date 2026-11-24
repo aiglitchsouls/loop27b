@@ -16,3 +16,20 @@ only `--spec-type` changes. A = `draft-mtp` (today), B = `draft-mtp,ngram-simple
 - Pre-set bar: speed passes easily (≥1.5×), but "any output differs" was hit (2/20), so by the letter it fails.
 - Whole-loop effect on IFEval: rewrites are ~19% of the loop's generated tokens, so the 10.9 h practice run would drop
   to roughly 9.5 h (~13%). Bigger effect where rewrites dominate (code fix loops, app_bench).
+
+## Follow-up: loop27b's own math and code loops (2026-11-23)
+
+loop27b's `solve_math` / `solve_code` were run on dev items, once with `--exact` (A) and once with the n-gram default
+(B), with a warmed-up server. Every item was solved on the first try in both runs, so this measures the first-try
+path with no rewrites.
+
+| Loop | A total | B total | Speedup | Correct A / B | Same output |
+|---|---|---|---|---|---|
+| Maths, 20 problems (2 of each of 10 kinds) | 453 s | 492 s | **0.92×** (median 0.95×) | 20/20 / 20/20 | 20/20 |
+| Code, 20 even-numbered HumanEval dev tasks (hidden tests) | 904 s | 763 s | **1.19×** (median 1.11×, up to 1.66×) | 20/20 / 20/20 | 17/20 |
+
+- Maths scripts are short and new, so there is nothing to copy and n-gram only adds overhead. Since then,
+  `loop27b.py math` always uses `draft-mtp` alone.
+- Code gains grow with answer length: answers of 1,500–2,700 characters were 1.46–1.66× faster.
+- The 3 differing code answers have reworded comments or a different correct implementation. All of them pass the
+  hidden tests.

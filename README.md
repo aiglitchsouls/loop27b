@@ -27,7 +27,9 @@ Since 2026-11-23, `loop27b.py` without `--exact` starts the same server with `--
 The added n-gram lookup drafts by copying from text already in the conversation, which is most of a rewrite: on 20
 IFEval rewrite requests it was 2.9× faster (4.9 → 16.4 tokens/s), and no faster on writing new text. At temperature 0
 the output can differ at near-ties (2 of 20 rewrites changed one word; both scored the same), so use `--exact` to
-re-run the published numbers. Details: `results/ngram_drafting.md`.
+re-run the published numbers. On first tries (20 maths, 20 HumanEval dev items, all solved first time) code was
+1.19× faster and maths 0.92× (slower: its short new scripts have nothing to copy), so `loop27b.py math` always
+uses `draft-mtp` alone; only `code` uses the n-gram default. Details: `results/ngram_drafting.md`.
 
 Requests: `temperature 0`, `seed 42`, thinking off via `"chat_template_kwargs": {"enable_thinking": false}`.
 
