@@ -1,0 +1,24 @@
+{
+ "policies": {
+  "P0 m1 alone": {
+   "wrong": 17,
+   "fixed": 0,
+   "broke": 0,
+   "min": 3.74523015873016
+  },
+  "P1 always check": {
+   "wrong": 7,
+   "fixed": 15,
+   "broke": 5,
+   "min": 6.764468253968253
+  },
+  "P2 check on retry": {
+   "wrong": 8,
+   "fixed": 12,
+   "broke": 3,
+   "min": 4.921168253968257
+  }
+ },
+ "primary": "P2 check on retry",
+ "verdict": "PASS"
+}

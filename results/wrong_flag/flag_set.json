@@ -1,0 +1,842 @@
+[
+ {
+  "id": "incl_excl_big_1",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 421503141447 inclusive are divisible by at least one of 21, 20 and 7, but are not divisible by 6?",
+  "answer": 62221892309
+ },
+ {
+  "id": "incl_excl_big_2",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 547123690921 inclusive are divisible by at least one of 16, 26 and 13, but are not divisible by 14?",
+  "answer": 66135830771
+ },
+ {
+  "id": "incl_excl_big_3",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 819561327251 inclusive are divisible by at least one of 17, 13 and 23, but are not divisible by 8?",
+  "answer": 121188822071
+ },
+ {
+  "id": "incl_excl_big_4",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 512276316300 inclusive are divisible by at least one of 24, 18 and 28, but are not divisible by 15?",
+  "answer": 47975083590
+ },
+ {
+  "id": "incl_excl_big_5",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 360817588751 inclusive are divisible by at least one of 12, 21 and 8, but are not divisible by 25?",
+  "answer": 70101702957
+ },
+ {
+  "id": "incl_excl_big_6",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 765592817587 inclusive are divisible by at least one of 28, 30 and 9, but are not divisible by 16?",
+  "answer": 111952759239
+ },
+ {
+  "id": "incl_excl_big_7",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 139772478455 inclusive are divisible by at least one of 18, 14 and 22, but are not divisible by 16?",
+  "answer": 18795162824
+ },
+ {
+  "id": "incl_excl_big_8",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 471338457381 inclusive are divisible by at least one of 19, 15 and 6, but are not divisible by 10?",
+  "answer": 96748420200
+ },
+ {
+  "id": "incl_excl_big_9",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 958245128137 inclusive are divisible by at least one of 11, 10 and 12, but are not divisible by 17?",
+  "answer": 218637034585
+ },
+ {
+  "id": "incl_excl_big_10",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 763154809494 inclusive are divisible by at least one of 20, 25 and 30, but are not divisible by 14?",
+  "answer": 63232827072
+ },
+ {
+  "id": "incl_excl_big_11",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 879267884952 inclusive are divisible by at least one of 30, 24 and 20, but are not divisible by 17?",
+  "answer": 82754624467
+ },
+ {
+  "id": "incl_excl_big_12",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 811221280070 inclusive are divisible by at least one of 22, 6 and 21, but are not divisible by 9?",
+  "answer": 127594689073
+ },
+ {
+  "id": "incl_excl_big_13",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 192584141385 inclusive are divisible by at least one of 25, 7 and 23, but are not divisible by 11?",
+  "answer": 37277156220
+ },
+ {
+  "id": "incl_excl_big_14",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 751542385437 inclusive are divisible by at least one of 19, 26 and 30, but are not divisible by 12?",
+  "answer": 70032390977
+ },
+ {
+  "id": "incl_excl_big_15",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 570988924394 inclusive are divisible by at least one of 29, 21 and 9, but are not divisible by 20?",
+  "answer": 93524047960
+ },
+ {
+  "id": "incl_excl_big_16",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 907251063893 inclusive are divisible by at least one of 24, 16 and 18, but are not divisible by 25?",
+  "answer": 108870127667
+ },
+ {
+  "id": "incl_excl_big_17",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 294363902228 inclusive are divisible by at least one of 30, 9 and 14, but are not divisible by 15?",
+  "answer": 43920963190
+ },
+ {
+  "id": "incl_excl_big_18",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 768768952512 inclusive are divisible by at least one of 16, 27 and 14, but are not divisible by 22?",
+  "answer": 111303249018
+ },
+ {
+  "id": "incl_excl_big_19",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 780986402169 inclusive are divisible by at least one of 11, 12 and 17, but are not divisible by 10?",
+  "answer": 146034712278
+ },
+ {
+  "id": "incl_excl_big_20",
+  "kind": "incl_excl_big",
+  "question": "How many integers from 1 to 594027747567 inclusive are divisible by at least one of 22, 12 and 18, but are not divisible by 14?",
+  "answer": 74574912032
+ },
+ {
+  "id": "digit_dp_big_1",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 511755916083417 inclusive are divisible by 11 and have digits that add up to exactly 95?",
+  "answer": 33368052611
+ },
+ {
+  "id": "digit_dp_big_2",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 868958235989452 inclusive are divisible by 13 and have digits that add up to exactly 95?",
+  "answer": 85264724707
+ },
+ {
+  "id": "digit_dp_big_3",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 319740071532176 inclusive are divisible by 13 and have digits that add up to exactly 53?",
+  "answer": 551959431320
+ },
+ {
+  "id": "digit_dp_big_4",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 457436848011124 inclusive are divisible by 13 and have digits that add up to exactly 45?",
+  "answer": 256891352347
+ },
+ {
+  "id": "digit_dp_big_5",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 718982928372622 inclusive are divisible by 13 and have digits that add up to exactly 81?",
+  "answer": 798700622152
+ },
+ {
+  "id": "digit_dp_big_6",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 886775217832439 inclusive are divisible by 11 and have digits that add up to exactly 58?",
+  "answer": 2122039526596
+ },
+ {
+  "id": "digit_dp_big_7",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 517948445811887 inclusive are divisible by 7 and have digits that add up to exactly 51?",
+  "answer": 1207376496324
+ },
+ {
+  "id": "digit_dp_big_8",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 126221682953847 inclusive are divisible by 7 and have digits that add up to exactly 74?",
+  "answer": 374261309170
+ },
+ {
+  "id": "digit_dp_big_9",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 667073433793577 inclusive are divisible by 7 and have digits that add up to exactly 47?",
+  "answer": 814984154994
+ },
+ {
+  "id": "digit_dp_big_10",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 53218659349674 inclusive are divisible by 13 and have digits that add up to exactly 69?",
+  "answer": 112189182833
+ },
+ {
+  "id": "digit_dp_big_11",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 25400596947910 inclusive are divisible by 13 and have digits that add up to exactly 43?",
+  "answer": 23921846010
+ },
+ {
+  "id": "digit_dp_big_12",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 918828526764332 inclusive are divisible by 11 and have digits that add up to exactly 63?",
+  "answer": 2795420973918
+ },
+ {
+  "id": "digit_dp_big_13",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 726321634262910 inclusive are divisible by 13 and have digits that add up to exactly 65?",
+  "answer": 2014036632914
+ },
+ {
+  "id": "digit_dp_big_14",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 187122436955428 inclusive are divisible by 7 and have digits that add up to exactly 103?",
+  "answer": 538204824
+ },
+ {
+  "id": "digit_dp_big_15",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 506446404695994 inclusive are divisible by 11 and have digits that add up to exactly 80?",
+  "answer": 664611764208
+ },
+ {
+  "id": "digit_dp_big_16",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 74107833971924 inclusive are divisible by 7 and have digits that add up to exactly 62?",
+  "answer": 396673685825
+ },
+ {
+  "id": "digit_dp_big_17",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 603697012228763 inclusive are divisible by 13 and have digits that add up to exactly 79?",
+  "answer": 796848786120
+ },
+ {
+  "id": "digit_dp_big_18",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 622677161274385 inclusive are divisible by 11 and have digits that add up to exactly 84?",
+  "answer": 500697975831
+ },
+ {
+  "id": "digit_dp_big_19",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 329192418894307 inclusive are divisible by 13 and have digits that add up to exactly 49?",
+  "answer": 368554312310
+ },
+ {
+  "id": "digit_dp_big_20",
+  "kind": "digit_dp_big",
+  "question": "How many integers from 1 to 866059155833750 inclusive are divisible by 11 and have digits that add up to exactly 52?",
+  "answer": 1190706991195
+ },
+ {
+  "id": "power_sum_mod_1",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^6 + 2^6 + 3^6 + ... + 818776806689^6 is divided by 8732? (The sum has 818776806689 terms: every integer from 1 to 818776806689, each raised to the power 6.)",
+  "answer": 3737
+ },
+ {
+  "id": "power_sum_mod_2",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^5 + 2^5 + 3^5 + ... + 212349838673^5 is divided by 2318? (The sum has 212349838673 terms: every integer from 1 to 212349838673, each raised to the power 5.)",
+  "answer": 2313
+ },
+ {
+  "id": "power_sum_mod_3",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^7 + 2^7 + 3^7 + ... + 776385263723^7 is divided by 4091? (The sum has 776385263723 terms: every integer from 1 to 776385263723, each raised to the power 7.)",
+  "answer": 2268
+ },
+ {
+  "id": "power_sum_mod_4",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^3 + 2^3 + 3^3 + ... + 760246780768^3 is divided by 1000? (The sum has 760246780768 terms: every integer from 1 to 760246780768, each raised to the power 3.)",
+  "answer": 616
+ },
+ {
+  "id": "power_sum_mod_5",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^3 + 2^3 + 3^3 + ... + 689701366025^3 is divided by 8471? (The sum has 689701366025 terms: every integer from 1 to 689701366025, each raised to the power 3.)",
+  "answer": 7153
+ },
+ {
+  "id": "power_sum_mod_6",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^7 + 2^7 + 3^7 + ... + 278792578383^7 is divided by 7863? (The sum has 278792578383 terms: every integer from 1 to 278792578383, each raised to the power 7.)",
+  "answer": 3108
+ },
+ {
+  "id": "power_sum_mod_7",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^3 + 2^3 + 3^3 + ... + 910964812534^3 is divided by 5043? (The sum has 910964812534 terms: every integer from 1 to 910964812534, each raised to the power 3.)",
+  "answer": 2287
+ },
+ {
+  "id": "power_sum_mod_8",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^6 + 2^6 + 3^6 + ... + 303891664286^6 is divided by 5899? (The sum has 303891664286 terms: every integer from 1 to 303891664286, each raised to the power 6.)",
+  "answer": 2054
+ },
+ {
+  "id": "power_sum_mod_9",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^4 + 2^4 + 3^4 + ... + 710937173020^4 is divided by 5915? (The sum has 710937173020 terms: every integer from 1 to 710937173020, each raised to the power 4.)",
+  "answer": 4946
+ },
+ {
+  "id": "power_sum_mod_10",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^6 + 2^6 + 3^6 + ... + 524785302834^6 is divided by 5592? (The sum has 524785302834 terms: every integer from 1 to 524785302834, each raised to the power 6.)",
+  "answer": 4561
+ },
+ {
+  "id": "power_sum_mod_11",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^7 + 2^7 + 3^7 + ... + 481806585330^7 is divided by 3701? (The sum has 481806585330 terms: every integer from 1 to 481806585330, each raised to the power 7.)",
+  "answer": 1742
+ },
+ {
+  "id": "power_sum_mod_12",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^5 + 2^5 + 3^5 + ... + 368895048716^5 is divided by 5710? (The sum has 368895048716 terms: every integer from 1 to 368895048716, each raised to the power 5.)",
+  "answer": 1676
+ },
+ {
+  "id": "power_sum_mod_13",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^7 + 2^7 + 3^7 + ... + 332620766486^7 is divided by 5629? (The sum has 332620766486 terms: every integer from 1 to 332620766486, each raised to the power 7.)",
+  "answer": 2424
+ },
+ {
+  "id": "power_sum_mod_14",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^4 + 2^4 + 3^4 + ... + 570038725678^4 is divided by 6154? (The sum has 570038725678 terms: every integer from 1 to 570038725678, each raised to the power 4.)",
+  "answer": 1211
+ },
+ {
+  "id": "power_sum_mod_15",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^6 + 2^6 + 3^6 + ... + 839760859920^6 is divided by 5076? (The sum has 839760859920 terms: every integer from 1 to 839760859920, each raised to the power 6.)",
+  "answer": 560
+ },
+ {
+  "id": "power_sum_mod_16",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^5 + 2^5 + 3^5 + ... + 143898629177^5 is divided by 6437? (The sum has 143898629177 terms: every integer from 1 to 143898629177, each raised to the power 5.)",
+  "answer": 6024
+ },
+ {
+  "id": "power_sum_mod_17",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^4 + 2^4 + 3^4 + ... + 462773200249^4 is divided by 7507? (The sum has 462773200249 terms: every integer from 1 to 462773200249, each raised to the power 4.)",
+  "answer": 1954
+ },
+ {
+  "id": "power_sum_mod_18",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^3 + 2^3 + 3^3 + ... + 156525755198^3 is divided by 8164? (The sum has 156525755198 terms: every integer from 1 to 156525755198, each raised to the power 3.)",
+  "answer": 5113
+ },
+ {
+  "id": "power_sum_mod_19",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^3 + 2^3 + 3^3 + ... + 145911412020^3 is divided by 8871? (The sum has 145911412020 terms: every integer from 1 to 145911412020, each raised to the power 3.)",
+  "answer": 4638
+ },
+ {
+  "id": "power_sum_mod_20",
+  "kind": "power_sum_mod",
+  "question": "What is the remainder when the sum 1^7 + 2^7 + 3^7 + ... + 835175302634^7 is divided by 2889? (The sum has 835175302634 terms: every integer from 1 to 835175302634, each raised to the power 7.)",
+  "answer": 2505
+ },
+ {
+  "id": "dioph_count_1",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 5x + 7y + 17z = 886985585?",
+  "answer": 661128952706197
+ },
+ {
+  "id": "dioph_count_2",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 9x + 16y + 17z = 270230596?",
+  "answer": 14915152443669
+ },
+ {
+  "id": "dioph_count_3",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 5x + 7y + 13z = 694300317?",
+  "answer": 529728513784405
+ },
+ {
+  "id": "dioph_count_4",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 3x + 9y + 17z = 841390147?",
+  "answer": 771173611396221
+ },
+ {
+  "id": "dioph_count_5",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 5x + 15y + 18z = 477618342?",
+  "answer": 84488618204440
+ },
+ {
+  "id": "dioph_count_6",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 12x + 15y + 17z = 819560179?",
+  "answer": 109751453463744
+ },
+ {
+  "id": "dioph_count_7",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 14x + 16y + 17z = 896451038?",
+  "answer": 105517925538885
+ },
+ {
+  "id": "dioph_count_8",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 3x + 14y + 18z = 225427008?",
+  "answer": 33609359003978
+ },
+ {
+  "id": "dioph_count_9",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 7x + 9y + 19z = 850447167?",
+  "answer": 302113790152037
+ },
+ {
+  "id": "dioph_count_10",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 5x + 12y + 17z = 207630321?",
+  "answer": 21132528067645
+ },
+ {
+  "id": "dioph_count_11",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 4x + 7y + 15z = 418571552?",
+  "answer": 208573994079225
+ },
+ {
+  "id": "dioph_count_12",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 3x + 13y + 17z = 444057939?",
+  "answer": 148708497619035
+ },
+ {
+  "id": "dioph_count_13",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 8x + 9y + 14z = 886645113?",
+  "answer": 389950186464770
+ },
+ {
+  "id": "dioph_count_14",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 7x + 11y + 16z = 547529647?",
+  "answer": 121667505259721
+ },
+ {
+  "id": "dioph_count_15",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 12x + 13y + 15z = 193204512?",
+  "answer": 7976067565952
+ },
+ {
+  "id": "dioph_count_16",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 10x + 18y + 19z = 491640216?",
+  "answer": 35337738952746
+ },
+ {
+  "id": "dioph_count_17",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 4x + 8y + 11z = 324115537?",
+  "answer": 149219997277902
+ },
+ {
+  "id": "dioph_count_18",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 9x + 10y + 11z = 272606940?",
+  "answer": 37532601976956
+ },
+ {
+  "id": "dioph_count_19",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 5x + 17y + 19z = 210484506?",
+  "answer": 13716326902764
+ },
+ {
+  "id": "dioph_count_20",
+  "kind": "dioph_count",
+  "question": "How many triples (x, y, z) of non-negative integers satisfy the equation 5x + 11y + 18z = 876306062?",
+  "answer": 387834517218361
+ },
+ {
+  "id": "recurrence_big_1",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 9, a(2) = 9, and a(n) = 2*a(n-1) + 7*a(n-2) + 5 for every n >= 3. What is the remainder when a(378959353502254) is divided by 979?",
+  "answer": 427
+ },
+ {
+  "id": "recurrence_big_2",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 6, a(2) = 8, and a(n) = 4*a(n-1) + 9*a(n-2) + 9 for every n >= 3. What is the remainder when a(492882600682917) is divided by 722?",
+  "answer": 490
+ },
+ {
+  "id": "recurrence_big_3",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 3, a(2) = 8, and a(n) = 2*a(n-1) + 4*a(n-2) + 7 for every n >= 3. What is the remainder when a(63919184338265) is divided by 217?",
+  "answer": 148
+ },
+ {
+  "id": "recurrence_big_4",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 1, a(2) = 9, and a(n) = 9*a(n-1) + 2*a(n-2) + 3 for every n >= 3. What is the remainder when a(374548509306890) is divided by 477?",
+  "answer": 216
+ },
+ {
+  "id": "recurrence_big_5",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 7, a(2) = 6, and a(n) = 9*a(n-1) + 7*a(n-2) + 5 for every n >= 3. What is the remainder when a(113542342309508) is divided by 559?",
+  "answer": 350
+ },
+ {
+  "id": "recurrence_big_6",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 2, a(2) = 9, and a(n) = 3*a(n-1) + 9*a(n-2) + 9 for every n >= 3. What is the remainder when a(919432988537869) is divided by 633?",
+  "answer": 135
+ },
+ {
+  "id": "recurrence_big_7",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 6, a(2) = 4, and a(n) = 5*a(n-1) + 2*a(n-2) + 5 for every n >= 3. What is the remainder when a(826216881859079) is divided by 818?",
+  "answer": 561
+ },
+ {
+  "id": "recurrence_big_8",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 8, a(2) = 4, and a(n) = 9*a(n-1) + 9*a(n-2) + 7 for every n >= 3. What is the remainder when a(242297509205156) is divided by 189?",
+  "answer": 133
+ },
+ {
+  "id": "recurrence_big_9",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 1, a(2) = 1, and a(n) = 6*a(n-1) + 9*a(n-2) + 2 for every n >= 3. What is the remainder when a(593372006725703) is divided by 408?",
+  "answer": 353
+ },
+ {
+  "id": "recurrence_big_10",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 2, a(2) = 8, and a(n) = 5*a(n-1) + 4*a(n-2) + 5 for every n >= 3. What is the remainder when a(874091517157076) is divided by 303?",
+  "answer": 50
+ },
+ {
+  "id": "recurrence_big_11",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 9, a(2) = 9, and a(n) = 8*a(n-1) + 7*a(n-2) + 1 for every n >= 3. What is the remainder when a(738539702725579) is divided by 600?",
+  "answer": 352
+ },
+ {
+  "id": "recurrence_big_12",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 6, a(2) = 5, and a(n) = 9*a(n-1) + 3*a(n-2) + 3 for every n >= 3. What is the remainder when a(15955699034438) is divided by 501?",
+  "answer": 48
+ },
+ {
+  "id": "recurrence_big_13",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 8, a(2) = 3, and a(n) = 4*a(n-1) + 9*a(n-2) + 1 for every n >= 3. What is the remainder when a(589525700452913) is divided by 389?",
+  "answer": 158
+ },
+ {
+  "id": "recurrence_big_14",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 4, a(2) = 3, and a(n) = 8*a(n-1) + 7*a(n-2) + 9 for every n >= 3. What is the remainder when a(82773581294584) is divided by 189?",
+  "answer": 58
+ },
+ {
+  "id": "recurrence_big_15",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 9, a(2) = 9, and a(n) = 7*a(n-1) + 3*a(n-2) + 1 for every n >= 3. What is the remainder when a(431800759111207) is divided by 656?",
+  "answer": 9
+ },
+ {
+  "id": "recurrence_big_16",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 7, a(2) = 9, and a(n) = 2*a(n-1) + 2*a(n-2) + 4 for every n >= 3. What is the remainder when a(286914582911220) is divided by 327?",
+  "answer": 207
+ },
+ {
+  "id": "recurrence_big_17",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 5, a(2) = 1, and a(n) = 6*a(n-1) + 9*a(n-2) + 6 for every n >= 3. What is the remainder when a(295919208566051) is divided by 609?",
+  "answer": 243
+ },
+ {
+  "id": "recurrence_big_18",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 9, a(2) = 1, and a(n) = 5*a(n-1) + 8*a(n-2) + 5 for every n >= 3. What is the remainder when a(683535040391560) is divided by 833?",
+  "answer": 710
+ },
+ {
+  "id": "recurrence_big_19",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 4, a(2) = 3, and a(n) = 8*a(n-1) + 5*a(n-2) + 5 for every n >= 3. What is the remainder when a(300537397278987) is divided by 144?",
+  "answer": 13
+ },
+ {
+  "id": "recurrence_big_20",
+  "kind": "recurrence_big",
+  "question": "A sequence is defined by a(1) = 7, a(2) = 2, and a(n) = 4*a(n-1) + 6*a(n-2) + 6 for every n >= 3. What is the remainder when a(937352291838397) is divided by 393?",
+  "answer": 392
+ },
+ {
+  "id": "seating_forbidden_1",
+  "kind": "seating_forbidden",
+  "question": "13 people, numbered 1 to 13, must sit in a row of 13 chairs numbered 1 to 13, one person per chair. Some chairs are refused: person 1 refuses chairs 2, 11 and 12; person 2 refuses chairs 3 and 4; person 3 refuses chairs 1 and 3; person 4 refuses chairs 1 and 8; person 5 refuses chairs 10 and 11; person 6 refuses chairs 1, 9 and 10; person 7 refuses chairs 4, 9 and 11; person 8 refuses chairs 5 and 9; person 9 refuses chairs 5, 12 and 13; person 10 refuses chairs 3 and 9; person 11 refuses chairs 6 and 8; person 12 refuses chairs 4, 8 and 13; person 13 refuses chairs 4, 8 and 10. In how many ways can all 13 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 415238512
+ },
+ {
+  "id": "seating_forbidden_2",
+  "kind": "seating_forbidden",
+  "question": "11 people, numbered 1 to 11, must sit in a row of 11 chairs numbered 1 to 11, one person per chair. Some chairs are refused: person 1 refuses chairs 5, 7 and 8; person 2 refuses chairs 4 and 7; person 3 refuses chairs 5 and 6; person 4 refuses chairs 1 and 9; person 5 refuses chairs 2, 4 and 10; person 6 refuses chairs 5 and 11; person 7 refuses chairs 4 and 5; person 8 refuses chairs 1 and 4; person 9 refuses chairs 2 and 9; person 10 refuses chairs 8 and 10; person 11 refuses chairs 3, 6 and 8. In how many ways can all 11 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 3286956
+ },
+ {
+  "id": "seating_forbidden_3",
+  "kind": "seating_forbidden",
+  "question": "13 people, numbered 1 to 13, must sit in a row of 13 chairs numbered 1 to 13, one person per chair. Some chairs are refused: person 1 refuses chairs 2 and 7; person 2 refuses chairs 6, 9 and 12; person 3 refuses chairs 4, 6 and 9; person 4 refuses chairs 4, 7 and 8; person 5 refuses chairs 6, 8 and 11; person 6 refuses chairs 5, 6 and 12; person 7 refuses chairs 9 and 13; person 8 refuses chairs 6 and 9; person 9 refuses chairs 1, 4 and 12; person 10 refuses chairs 1, 9 and 10; person 11 refuses chairs 1, 5 and 10; person 12 refuses chairs 3, 9 and 11; person 13 refuses chairs 1 and 8. In how many ways can all 13 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 296980140
+ },
+ {
+  "id": "seating_forbidden_4",
+  "kind": "seating_forbidden",
+  "question": "13 people, numbered 1 to 13, must sit in a row of 13 chairs numbered 1 to 13, one person per chair. Some chairs are refused: person 1 refuses chairs 9 and 10; person 2 refuses chairs 6 and 10; person 3 refuses chairs 1, 5 and 11; person 4 refuses chairs 7 and 12; person 5 refuses chairs 7 and 8; person 6 refuses chairs 5 and 12; person 7 refuses chairs 1 and 9; person 8 refuses chairs 4, 5 and 12; person 9 refuses chairs 7 and 9; person 10 refuses chairs 2 and 11; person 11 refuses chairs 1 and 12; person 12 refuses chairs 5, 8 and 10; person 13 refuses chairs 5, 9 and 12. In how many ways can all 13 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 461426742
+ },
+ {
+  "id": "seating_forbidden_5",
+  "kind": "seating_forbidden",
+  "question": "12 people, numbered 1 to 12, must sit in a row of 12 chairs numbered 1 to 12, one person per chair. Some chairs are refused: person 1 refuses chairs 7, 9 and 12; person 2 refuses chairs 4 and 11; person 3 refuses chairs 8 and 12; person 4 refuses chairs 6, 7 and 8; person 5 refuses chairs 3 and 9; person 6 refuses chairs 2 and 3; person 7 refuses chairs 1 and 10; person 8 refuses chairs 2 and 9; person 9 refuses chairs 1, 7 and 11; person 10 refuses chairs 1 and 4; person 11 refuses chairs 2 and 9; person 12 refuses chairs 2 and 3. In how many ways can all 12 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 40619144
+ },
+ {
+  "id": "seating_forbidden_6",
+  "kind": "seating_forbidden",
+  "question": "13 people, numbered 1 to 13, must sit in a row of 13 chairs numbered 1 to 13, one person per chair. Some chairs are refused: person 1 refuses chairs 1 and 12; person 2 refuses chairs 2 and 11; person 3 refuses chairs 2, 4 and 5; person 4 refuses chairs 5 and 10; person 5 refuses chairs 9 and 10; person 6 refuses chairs 4 and 7; person 7 refuses chairs 4, 6 and 7; person 8 refuses chairs 2 and 9; person 9 refuses chairs 3 and 13; person 10 refuses chairs 2, 6 and 13; person 11 refuses chairs 3, 7 and 11; person 12 refuses chairs 2, 4 and 10; person 13 refuses chairs 4, 5 and 10. In how many ways can all 13 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 394831256
+ },
+ {
+  "id": "seating_forbidden_7",
+  "kind": "seating_forbidden",
+  "question": "11 people, numbered 1 to 11, must sit in a row of 11 chairs numbered 1 to 11, one person per chair. Some chairs are refused: person 1 refuses chairs 4, 5 and 6; person 2 refuses chairs 3, 8 and 10; person 3 refuses chairs 3, 8 and 9; person 4 refuses chairs 7 and 8; person 5 refuses chairs 2, 6 and 8; person 6 refuses chairs 2 and 4; person 7 refuses chairs 2, 7 and 8; person 8 refuses chairs 1 and 10; person 9 refuses chairs 1 and 4; person 10 refuses chairs 3 and 4; person 11 refuses chairs 8 and 10. In how many ways can all 11 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 2304970
+ },
+ {
+  "id": "seating_forbidden_8",
+  "kind": "seating_forbidden",
+  "question": "11 people, numbered 1 to 11, must sit in a row of 11 chairs numbered 1 to 11, one person per chair. Some chairs are refused: person 1 refuses chairs 1, 2 and 10; person 2 refuses chairs 2, 4 and 5; person 3 refuses chairs 6 and 8; person 4 refuses chairs 5, 6 and 10; person 5 refuses chairs 3 and 6; person 6 refuses chairs 2 and 3; person 7 refuses chairs 2, 10 and 11; person 8 refuses chairs 7, 8 and 11; person 9 refuses chairs 4 and 8; person 10 refuses chairs 3, 5 and 9; person 11 refuses chairs 8, 9 and 10. In how many ways can all 11 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 2073372
+ },
+ {
+  "id": "seating_forbidden_9",
+  "kind": "seating_forbidden",
+  "question": "13 people, numbered 1 to 13, must sit in a row of 13 chairs numbered 1 to 13, one person per chair. Some chairs are refused: person 1 refuses chairs 8, 9 and 10; person 2 refuses chairs 3, 6 and 10; person 3 refuses chairs 4 and 5; person 4 refuses chairs 8, 11 and 13; person 5 refuses chairs 1 and 5; person 6 refuses chairs 4, 8 and 10; person 7 refuses chairs 4 and 13; person 8 refuses chairs 1 and 2; person 9 refuses chairs 8 and 13; person 10 refuses chairs 5 and 8; person 11 refuses chairs 1, 2 and 11; person 12 refuses chairs 11 and 13; person 13 refuses chairs 4, 10 and 13. In how many ways can all 13 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 382717476
+ },
+ {
+  "id": "seating_forbidden_10",
+  "kind": "seating_forbidden",
+  "question": "11 people, numbered 1 to 11, must sit in a row of 11 chairs numbered 1 to 11, one person per chair. Some chairs are refused: person 1 refuses chairs 7 and 10; person 2 refuses chairs 7 and 10; person 3 refuses chairs 1 and 2; person 4 refuses chairs 2 and 9; person 5 refuses chairs 4 and 8; person 6 refuses chairs 1 and 2; person 7 refuses chairs 2, 3 and 7; person 8 refuses chairs 8 and 9; person 9 refuses chairs 5 and 8; person 10 refuses chairs 6, 10 and 11; person 11 refuses chairs 2 and 10. In how many ways can all 11 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 3454848
+ },
+ {
+  "id": "seating_forbidden_11",
+  "kind": "seating_forbidden",
+  "question": "11 people, numbered 1 to 11, must sit in a row of 11 chairs numbered 1 to 11, one person per chair. Some chairs are refused: person 1 refuses chairs 3, 8 and 9; person 2 refuses chairs 1, 3 and 11; person 3 refuses chairs 1, 6 and 9; person 4 refuses chairs 3 and 11; person 5 refuses chairs 3 and 8; person 6 refuses chairs 6 and 8; person 7 refuses chairs 3 and 9; person 8 refuses chairs 7, 8 and 9; person 9 refuses chairs 1 and 9; person 10 refuses chairs 1, 3 and 6; person 11 refuses chairs 1, 5 and 7. In how many ways can all 11 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 1796418
+ },
+ {
+  "id": "seating_forbidden_12",
+  "kind": "seating_forbidden",
+  "question": "13 people, numbered 1 to 13, must sit in a row of 13 chairs numbered 1 to 13, one person per chair. Some chairs are refused: person 1 refuses chairs 1, 5 and 13; person 2 refuses chairs 2, 6 and 11; person 3 refuses chairs 6, 10 and 13; person 4 refuses chairs 3 and 11; person 5 refuses chairs 2, 4 and 13; person 6 refuses chairs 2, 4 and 10; person 7 refuses chairs 3, 4 and 12; person 8 refuses chairs 10 and 13; person 9 refuses chairs 7 and 9; person 10 refuses chairs 4, 11 and 13; person 11 refuses chairs 4, 8 and 9; person 12 refuses chairs 1 and 7; person 13 refuses chairs 5, 7 and 12. In how many ways can all 13 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 314462598
+ },
+ {
+  "id": "seating_forbidden_13",
+  "kind": "seating_forbidden",
+  "question": "11 people, numbered 1 to 11, must sit in a row of 11 chairs numbered 1 to 11, one person per chair. Some chairs are refused: person 1 refuses chairs 2 and 7; person 2 refuses chairs 1 and 6; person 3 refuses chairs 7 and 11; person 4 refuses chairs 2 and 3; person 5 refuses chairs 4 and 10; person 6 refuses chairs 2, 4 and 11; person 7 refuses chairs 5, 6 and 11; person 8 refuses chairs 3 and 6; person 9 refuses chairs 2, 4 and 6; person 10 refuses chairs 5 and 11; person 11 refuses chairs 7 and 9. In how many ways can all 11 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 3070944
+ },
+ {
+  "id": "seating_forbidden_14",
+  "kind": "seating_forbidden",
+  "question": "12 people, numbered 1 to 12, must sit in a row of 12 chairs numbered 1 to 12, one person per chair. Some chairs are refused: person 1 refuses chairs 8 and 9; person 2 refuses chairs 1, 5 and 9; person 3 refuses chairs 6, 8 and 11; person 4 refuses chairs 2, 8 and 9; person 5 refuses chairs 7 and 10; person 6 refuses chairs 4, 8 and 10; person 7 refuses chairs 5, 8 and 10; person 8 refuses chairs 9, 10 and 11; person 9 refuses chairs 4 and 5; person 10 refuses chairs 4, 6 and 10; person 11 refuses chairs 3, 7 and 10; person 12 refuses chairs 3 and 10. In how many ways can all 12 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 20488459
+ },
+ {
+  "id": "seating_forbidden_15",
+  "kind": "seating_forbidden",
+  "question": "12 people, numbered 1 to 12, must sit in a row of 12 chairs numbered 1 to 12, one person per chair. Some chairs are refused: person 1 refuses chairs 6 and 11; person 2 refuses chairs 3 and 7; person 3 refuses chairs 3, 5 and 9; person 4 refuses chairs 3, 8 and 10; person 5 refuses chairs 8 and 11; person 6 refuses chairs 4, 9 and 12; person 7 refuses chairs 1 and 11; person 8 refuses chairs 3, 4 and 9; person 9 refuses chairs 2, 4 and 6; person 10 refuses chairs 7 and 10; person 11 refuses chairs 5 and 8; person 12 refuses chairs 5, 7 and 10. In how many ways can all 12 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 30715082
+ },
+ {
+  "id": "seating_forbidden_16",
+  "kind": "seating_forbidden",
+  "question": "12 people, numbered 1 to 12, must sit in a row of 12 chairs numbered 1 to 12, one person per chair. Some chairs are refused: person 1 refuses chairs 5, 8 and 9; person 2 refuses chairs 2 and 3; person 3 refuses chairs 6 and 8; person 4 refuses chairs 3, 6 and 12; person 5 refuses chairs 3, 6 and 7; person 6 refuses chairs 1, 2 and 11; person 7 refuses chairs 4 and 5; person 8 refuses chairs 3 and 9; person 9 refuses chairs 5 and 12; person 10 refuses chairs 1, 2 and 12; person 11 refuses chairs 4, 5 and 10; person 12 refuses chairs 7 and 11. In how many ways can all 12 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 31050310
+ },
+ {
+  "id": "seating_forbidden_17",
+  "kind": "seating_forbidden",
+  "question": "11 people, numbered 1 to 11, must sit in a row of 11 chairs numbered 1 to 11, one person per chair. Some chairs are refused: person 1 refuses chairs 2, 3 and 8; person 2 refuses chairs 2 and 4; person 3 refuses chairs 4 and 8; person 4 refuses chairs 4, 10 and 11; person 5 refuses chairs 8, 10 and 11; person 6 refuses chairs 3 and 9; person 7 refuses chairs 1 and 4; person 8 refuses chairs 4 and 11; person 9 refuses chairs 2, 6 and 10; person 10 refuses chairs 4, 6 and 8; person 11 refuses chairs 1, 2 and 6. In how many ways can all 11 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 2012534
+ },
+ {
+  "id": "seating_forbidden_18",
+  "kind": "seating_forbidden",
+  "question": "12 people, numbered 1 to 12, must sit in a row of 12 chairs numbered 1 to 12, one person per chair. Some chairs are refused: person 1 refuses chairs 4, 9 and 12; person 2 refuses chairs 6, 9 and 11; person 3 refuses chairs 6 and 9; person 4 refuses chairs 1, 7 and 12; person 5 refuses chairs 5 and 6; person 6 refuses chairs 4 and 10; person 7 refuses chairs 3 and 4; person 8 refuses chairs 1 and 2; person 9 refuses chairs 3, 7 and 9; person 10 refuses chairs 3 and 8; person 11 refuses chairs 7 and 10; person 12 refuses chairs 1 and 10. In how many ways can all 12 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 37201814
+ },
+ {
+  "id": "seating_forbidden_19",
+  "kind": "seating_forbidden",
+  "question": "12 people, numbered 1 to 12, must sit in a row of 12 chairs numbered 1 to 12, one person per chair. Some chairs are refused: person 1 refuses chairs 2, 9 and 12; person 2 refuses chairs 1, 3 and 7; person 3 refuses chairs 1 and 6; person 4 refuses chairs 6, 7 and 10; person 5 refuses chairs 4 and 10; person 6 refuses chairs 6, 8 and 9; person 7 refuses chairs 2, 6 and 12; person 8 refuses chairs 2, 8 and 11; person 9 refuses chairs 6, 8 and 11; person 10 refuses chairs 5 and 12; person 11 refuses chairs 3, 10 and 12; person 12 refuses chairs 3, 10 and 11. In how many ways can all 12 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 21953992
+ },
+ {
+  "id": "seating_forbidden_20",
+  "kind": "seating_forbidden",
+  "question": "11 people, numbered 1 to 11, must sit in a row of 11 chairs numbered 1 to 11, one person per chair. Some chairs are refused: person 1 refuses chairs 6, 7 and 11; person 2 refuses chairs 3 and 5; person 3 refuses chairs 4, 5 and 9; person 4 refuses chairs 2 and 7; person 5 refuses chairs 6 and 10; person 6 refuses chairs 1, 3 and 6; person 7 refuses chairs 5, 8 and 10; person 8 refuses chairs 3 and 11; person 9 refuses chairs 10 and 11; person 10 refuses chairs 1 and 8; person 11 refuses chairs 9 and 10. In how many ways can all 11 people be seated so that nobody sits in a chair they refuse?",
+  "answer": 2977412
+ },
+ {
+  "id": "tilings_blocked_1",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 4 rows and 10 columns of unit squares. The squares at (row, column) positions (1, 3), (2, 5) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 3599
+ },
+ {
+  "id": "tilings_blocked_2",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 4 rows and 7 columns of unit squares. The squares at (row, column) positions (1, 1), (1, 4) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 165
+ },
+ {
+  "id": "tilings_blocked_3",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 4 rows and 10 columns of unit squares. The squares at (row, column) positions (2, 1), (3, 9) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 389
+ },
+ {
+  "id": "tilings_blocked_4",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 5 rows and 6 columns of unit squares. The squares at (row, column) positions (2, 1), (5, 1) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 208
+ },
+ {
+  "id": "tilings_blocked_5",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 6 rows and 6 columns of unit squares. The squares at (row, column) positions (1, 2), (2, 2) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 2088
+ },
+ {
+  "id": "tilings_blocked_6",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 5 rows and 8 columns of unit squares. The squares at (row, column) positions (4, 3), (5, 7) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 520
+ },
+ {
+  "id": "tilings_blocked_7",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 6 rows and 6 columns of unit squares. The squares at (row, column) positions (4, 5), (5, 1) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 424
+ },
+ {
+  "id": "tilings_blocked_8",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 4 rows and 7 columns of unit squares. The squares at (row, column) positions (2, 6), (3, 6) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 137
+ },
+ {
+  "id": "tilings_blocked_9",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 4 rows and 10 columns of unit squares. The squares at (row, column) positions (1, 10), (2, 4) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 1268
+ },
+ {
+  "id": "tilings_blocked_10",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 5 rows and 7 columns of unit squares. The square at (row, column) position (1, 5) has been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 2415
+ },
+ {
+  "id": "tilings_blocked_11",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 4 rows and 7 columns of unit squares. The squares at (row, column) positions (2, 1), (4, 2) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 107
+ },
+ {
+  "id": "tilings_blocked_12",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 6 rows and 7 columns of unit squares. The squares at (row, column) positions (1, 1), (3, 2), (3, 6), (5, 3) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 580
+ },
+ {
+  "id": "tilings_blocked_13",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 4 rows and 10 columns of unit squares. The squares at (row, column) positions (1, 1), (1, 8) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 1342
+ },
+ {
+  "id": "tilings_blocked_14",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 5 rows and 8 columns of unit squares. The squares at (row, column) positions (4, 3), (5, 3) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 5120
+ },
+ {
+  "id": "tilings_blocked_15",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 4 rows and 10 columns of unit squares. The squares at (row, column) positions (1, 4), (4, 4) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 3834
+ },
+ {
+  "id": "tilings_blocked_16",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 4 rows and 10 columns of unit squares. The squares at (row, column) positions (1, 4), (1, 8), (2, 4), (4, 10) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 1621
+ },
+ {
+  "id": "tilings_blocked_17",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 6 rows and 6 columns of unit squares. The squares at (row, column) positions (4, 2), (4, 5), (4, 6), (5, 2) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 478
+ },
+ {
+  "id": "tilings_blocked_18",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 6 rows and 8 columns of unit squares. The squares at (row, column) positions (2, 2), (3, 6), (4, 5), (4, 8) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 5168
+ },
+ {
+  "id": "tilings_blocked_19",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 6 rows and 8 columns of unit squares. The squares at (row, column) positions (4, 1), (6, 4) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 28128
+ },
+ {
+  "id": "tilings_blocked_20",
+  "kind": "tilings_blocked",
+  "question": "A rectangular board has 6 rows and 8 columns of unit squares. The squares at (row, column) positions (2, 1), (3, 7) have been removed. In how many ways can all the remaining squares be covered with 1x2 dominoes? Each domino covers two squares that share a side, dominoes may not overlap or cover a removed square, and two coverings that differ only by a rotation or reflection of the board count as different.",
+  "answer": 6566
+ }
+]

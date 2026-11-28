@@ -13,6 +13,8 @@ Options: --port N attaches to a llama-server already running on N instead of sta
 
 Math loop ("m1" in the experiments): the model writes a Python script; the sandbox runs it; the printed number is
 the answer. If the script crashes or prints no number, the error goes back with "fix it" (up to 2 times).
+Check on retry (default; --no-check is plain m1): if a fix was needed, a second program with a different method solves
+it again; on disagreement its answer is used and the output says CHECK THIS. 105 fresh hard problems: 17 -> 8 wrong.
 Code loop ("c6"): the model writes the function; the examples written in the task are run against it; failures go
 back with "fix it" (up to 2 times), or the model may reply KEEP when it judges the example itself wrong. The answer
 that passes the most examples wins (ties: the earliest). A cut-off answer gets "resend only the code".
@@ -56,6 +58,9 @@ MATH_SYS = (
     "Calculate the exact result and conclude with `print(ans)` (or print the exact numerical value). "
     "Do not write conversational preamble. Let Python compute the answer."
 )
+# Second method for the check-on-retry step (tested 2026-11-27/28 in D:\timepass\wrong_flag, results/wrong_flag.md).
+VERIFY_SYS = (MATH_SYS + " Use a different method from a closed-form formula: brute-force enumeration "
+              "or a step-by-step simulation, whenever that is feasible.")
 CODE_SYS = "You are an expert Python coder. Return the complete function in a ```python ``` block."
 FIX_MSG = ("Running your script failed: {err}\nFix it and return the complete corrected script in a ```python "
            "block. It must print only the final number.")
@@ -317,8 +322,9 @@ def run_examples(code, exs):
 
 
 # ---------------------------------------------------------------- the two loops
-def solve_math(srv, question, log=print):
-    msgs = [{"role": "system", "content": MATH_SYS}, {"role": "user", "content": question}]
+def script_answer(srv, sys_prompt, question, log=print, tag=""):
+    """One script-writing loop: write, run, fix up to RETRIES times. This is m1 when sys_prompt is MATH_SYS."""
+    msgs = [{"role": "system", "content": sys_prompt}, {"role": "user", "content": question}]
     text, code = "", None
     for k in range(1 + RETRIES):
         text, _ = srv.chat(msgs, MATH_BUDGET)
@@ -329,9 +335,47 @@ def solve_math(srv, question, log=print):
             err = f"the script printed no number (output: {out[:80]!r})"
         if num is not None:
             return {"answer": num, "script": code, "tries": k + 1}
-        log(f"try {k + 1} failed: {err}")
+        log(f"{tag}try {k + 1} failed: {err}")
         msgs += [{"role": "assistant", "content": text}, {"role": "user", "content": FIX_MSG.format(err=err)}]
     return {"answer": extract_number(text), "script": code, "tries": 1 + RETRIES, "note": "no script ran; number read from text"}
+
+
+def same(a, b):
+    return a is not None and b is not None and abs(a - b) < 1e-6
+
+
+def solve_math(srv, question, log=print, check=True):
+    """m1, plus check-on-retry (policy P2 in wrong_flag/): only when the first script needed a fix, a second program
+    using a different method (VERIFY_SYS) solves it too. If both agree, keep the answer. If they disagree, take the second
+    program's answer and say "check this". On 105 fresh hard problems this went from 17 to 8 wrong, for +1.2 min each.
+    Problems whose first script runs cleanly are not touched."""
+    r = script_answer(srv, MATH_SYS, question, log)
+    r["check"] = "not needed (first script ran cleanly)"
+    if not check or r["tries"] == 1:
+        if not check:
+            r["check"] = "off (--no-check)"
+        return r
+    log("first script needed a fix; solving again with a different method")
+    v = script_answer(srv, VERIFY_SYS, question, log, tag="check ")
+    r["second_answer"], r["second_script"] = v["answer"], v["script"]
+    if same(r["answer"], v["answer"]):
+        r["check"] = "passed (a second method gives the same answer)"
+    elif v["answer"] is None:
+        r["check"] = "CHECK THIS: the second method gave no number"
+        r["flag"] = True
+    else:
+        first = r["answer"]
+        r.update(answer=v["answer"], script=v["script"], first_answer=first, flag=True)
+        r.pop("note", None)
+        r["check"] = f"CHECK THIS: two methods disagreed (first got {fmt(first)}); using the second method's answer"
+    return r
+
+
+def fmt(n):
+    try:
+        return int(n) if n is not None and n == int(n) else n
+    except (OverflowError, ValueError):
+        return n
 
 
 def solve_code(srv, prompt, entry, log=print):
@@ -385,6 +429,22 @@ def selftest():
     bad = extract("```python\ndef add(a, b):\n    return a - b\n```", stub, "add")
     checks.append(("examples pass on right code", run_examples(good, exs)[0][0] is True))
     checks.append(("examples fail on wrong code", run_examples(bad, exs)[0][0] is False))
+
+    class FakeSrv:  # replays canned replies: first the m1 loop, then the second method
+        def __init__(s, replies): s.r = list(replies)
+        def chat(s, msgs, n): return s.r.pop(0), "stop"
+    py = lambda x: f"```python\nprint({x})\n```"  # noqa: E731
+    quiet = lambda m: None  # noqa: E731
+    r = solve_math(FakeSrv([py(7)]), "q", quiet)
+    checks.append(("check skipped when the first script runs", r["answer"] == 7 and "flag" not in r))
+    r = solve_math(FakeSrv(["no code", py(7), py(7)]), "q", quiet)
+    checks.append(("check after a retry, agreeing", r["answer"] == 7 and "flag" not in r and r["check"].startswith("passed")))
+    r = solve_math(FakeSrv(["no code", py(7), py(9)]), "q", quiet)
+    checks.append(("check after a retry, disagreeing -> second answer + flag", r["answer"] == 9 and r["flag"] and r["first_answer"] == 7))
+    r = solve_math(FakeSrv(["no code", py(7), "x", "x", "x"]), "q", quiet)
+    checks.append(("second method no number -> keep first + flag", r["answer"] == 7 and r["flag"]))
+    r = solve_math(FakeSrv(["no code", py(7)]), "q", quiet, check=False)
+    checks.append(("--no-check is plain m1", r["answer"] == 7 and "second_answer" not in r))
     for name, passed in checks:
         print(("PASS " if passed else "FAIL ") + name)
     return all(p for _, p in checks)
@@ -399,6 +459,8 @@ def main():
     ap.add_argument("--model", default=MODEL)
     ap.add_argument("--exact", action="store_true",
                     help="code: draft with the MTP head only, as in the published results (math always does)")
+    ap.add_argument("--no-check", action="store_true",
+                    help="math: plain m1, no second-method check after a retry (as in the published locked test)")
     a = ap.parse_args()
     if a.mode == "selftest":
         raise SystemExit(0 if selftest() else 1)
@@ -409,9 +471,9 @@ def main():
     with Server(a.port, a.model, spec) as srv:
         t0 = time.time()
         if a.mode == "math":
-            r = solve_math(srv, a.input, log)
-            n = r["answer"]
-            print(f"\nanswer: {int(n) if n is not None and n == int(n) else n}   ({r['tries']} tr{'y' if r['tries'] == 1 else 'ies'}, {time.time() - t0:.0f} s)")
+            r = solve_math(srv, a.input, log, check=not a.no_check)
+            print(f"\nanswer: {fmt(r['answer'])}   ({r['tries']} tr{'y' if r['tries'] == 1 else 'ies'}, {time.time() - t0:.0f} s)")
+            print(f"check: {r['check']}")
             print("\nscript that computed it:\n" + (r["script"] or "(none)"))
         else:
             prompt = open(a.input, encoding="utf-8").read()

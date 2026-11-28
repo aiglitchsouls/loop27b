@@ -66,6 +66,11 @@ the GPU.
 printed number is the answer. If the script crashes or prints nothing, the error goes back with "fix it", up to 2
 times. 1,024 tokens per reply.
 
+**Check on retry (default since 2026-11-28; `--no-check` turns it off):** if the first script needed a fix, a second
+program solves the problem again with a different method (brute force or simulation where feasible). If both agree,
+the answer stands. If they disagree, the second program's answer is used and the output says `CHECK THIS`. If the
+first script ran cleanly, nothing extra happens.
+
 **Coding (variant c6):** the model writes the function. The examples written in the task's docstring are run against
 it. Failures go back with "fix it", up to 2 times. The model may instead answer KEEP when it judges the example itself
 wrong (HumanEval has a few wrong examples). The answer that passes the most examples wins; a cut-off answer gets
@@ -98,6 +103,21 @@ These sets are close to saturated for both models.
 
 I built this set, and its problems are ones where code helps, so it favours the method. "Opus" is the current
 Opus run as a Claude Code subagent, not Opus 4.5 and not a clean API call. Breakdown: `results/hard_bench_practice.md`.
+
+### Check on retry (fresh hard maths, 7 kinds, answers checked two ways)
+
+These are two runs on problems never used before: 140 to test the "the two methods disagree" signal, then 105 more
+(locked) to test the policy. The policy was fixed in a written plan before the locked run.
+
+| 105 locked problems | Wrong | Fixed | Broke | Time per problem |
+|---|---|---|---|---|
+| m1 alone (`--no-check`) | 17 (16.2%) | | | 3.75 min |
+| always run the second method | 7 (6.7%) | 15 | 5 | 6.76 min |
+| **check on retry (default)** | **8 (7.6%)** | 12 | 3 | **4.92 min** |
+
+When the two methods disagree, the first answer is wrong 74–81% of the time. Run on every problem, the disagreement
+signal flags 34 of the 35 errors across both runs. The default only runs it after a retry, which still covers 30 of the 35. Caveats: all 3 broken answers were cases where the second program printed 0; 3 errors never needed a retry, so
+the check never saw them; and I built the problem set, with problems where code helps. Details: `results/wrong_flag.md`.
 
 ### Contest maths (AIME 2026, HMMT Feb 2026) and IFEval
 
